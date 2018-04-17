@@ -14,7 +14,7 @@ public class Main {
         quadPolynomial.a = 3;
         quadPolynomial.b = 2;
         quadPolynomial.c = 5;
-        assert(quadPolynomial.result(3) == 92);
+        assert (quadPolynomial.result(3) == 92);
 
         // 问题二：实现一个整数数组类 MyArray, 里面包含一个数组， 有5种操作：
         // 1. 添加一个整数到数组中，例：myArray.add(5)
@@ -35,15 +35,15 @@ public class Main {
         myArray.add(2);
         myArray.add(7);
 
-        assert(myArray.max() == 9);
+        assert (myArray.max() == 9);
 
         myArray.add(10);
-        assert(myArray.max() == 10);
+        assert (myArray.max() == 10);
 
         myArray.sort();
         int[] output = myArray.output();
         for (int i = 1; i <= 10; i++) {
-            assert(output[i] == (i + 1));
+            assert (output[i] == (i + 1));
         }
     }
 }
