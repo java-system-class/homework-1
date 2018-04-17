@@ -1,5 +1,7 @@
 package com.littlejava;
 
+import java.util.Arrays;
+
 public class MyArray {
 
     private int[] array = {};
@@ -9,13 +11,19 @@ public class MyArray {
     }
 
     public void add(int newVal) {
-        int[] newArray = new int[this.array.length + 1];
-        for (int i = 0; i < this.array.length; i++) {
-            newArray[i] = this.array[i];
-        }
+        int[] newArray = Arrays.copyOf(this.array, this.array.length + 1);
         newArray[newArray.length - 1] = newVal;
         this.array = newArray;
     }
+
+//    public void add(int newVal) {
+//        int[] newArray = new int[this.array.length + 1];
+//        for (int i = 0; i < this.array.length; i++) {
+//            newArray[i] = this.array[i];
+//        }
+//        newArray[newArray.length - 1] = newVal;
+//        this.array = newArray;
+//    }
 
     public void sort() {
         int temp;
