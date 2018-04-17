@@ -48,4 +48,20 @@ public class MyArray {
         }
         return max;
     }
+
+//    public int max() {
+//        int temp = 0;
+//        int[] tempArray = this.array;
+//        for (int i = 0; i < tempArray.length; i++) {
+//            for (int j = 0; j < tempArray.length - 1 - i; j++) {
+//                if (tempArray[j] > tempArray[j + 1]) {
+//                    temp = tempArray[j];
+//                    tempArray[j] = tempArray[j + 1];
+//                    tempArray[j + 1] = temp;
+//                }
+//            }
+//        }
+//        return temp;
+//    }
+
 }
