@@ -2,7 +2,6 @@ package com.littlejava;
 
 public class MyArray {
     private int l = 0;
-    private int index = 0;
     private int[] arr = new int[20];
     private int max;
     public void add (int value) {
@@ -39,7 +38,7 @@ public class MyArray {
         int[] newArr = new int[l];
 
         for(int i = 0; i < l; i++) {
-            newArr[i] = arr[i];
+            newArr[i] = arr[i + 1];
         }
         return newArr;
     }
