@@ -41,6 +41,11 @@ public class MyArray {
 
     public int max() {
         int max = 0;
+
+        if (this.array.length == 0) {
+            return max;
+        }
+
         for (int member : this.array) {
             if (member > max) {
                 max = member;
