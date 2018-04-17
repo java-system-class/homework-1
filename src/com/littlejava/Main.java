@@ -31,6 +31,7 @@ public class Main {
         myArray.add(5);
         myArray.add(8);
         myArray.add(4);
+        myArray.add(6);
         myArray.add(9);
         myArray.add(2);
         myArray.add(7);
@@ -42,8 +43,8 @@ public class Main {
 
         myArray.sort();
         int[] output = myArray.output();
-        for (int i = 1; i <= 10; i++) {
-            assert(output[i] == (i + 1));
+        for (int i = 0; i < 10; i++) {
+            assert(output[i] == (i));
         }
     }
 }
