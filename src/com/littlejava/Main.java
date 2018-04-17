@@ -43,8 +43,8 @@ public class Main {
 
         myArray.sort();
         int[] output = myArray.output();
-        for (int i = 1; i <= 10; i++) {
-            assert(output[i] == (i + 1));
+        for (int i = 0; i < 10; i++) {
+            assert(output[i] == (i));
         }
     }
 }
