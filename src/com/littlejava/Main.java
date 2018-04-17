@@ -48,3 +48,51 @@ public class Main {
         }
     }
 }
+
+class QuadPolynomial{
+    public int a=0,b=0,c=0;
+    public int result(int x){
+        return  (int)(Math.pow((a*x),2)+b*x+c);
+    }
+}
+
+
+class MyArray{
+    public int[] array=new int[0];
+    public void add(int num){
+        int[] temp = new int[array.length+1];
+        System.arraycopy(array, 0, temp, 0, array.length);
+        temp[array.length]=num;
+        array=temp;
+    }
+
+    public void sort(){
+        int n = array.length;
+        for (int i = 1; i < n; i++) { //插入排序
+            int t = array[i];
+            int j;
+            for (j = i - 1; j >= 0 && t < array[j]; j--) {
+                array[j + 1] = array[j];
+            }
+            array[j + 1] = t;
+        }
+    }
+
+    public int max(){
+        int max = array[0];
+        for(int i=0;i<array.length;i++)
+        {
+            if(array[i]>max)
+                max = array[i];
+        }
+        return max;
+    }
+
+    public int length(){
+        return array.length;
+    }
+
+    public int[] output(){
+        return array;
+    }
+}
