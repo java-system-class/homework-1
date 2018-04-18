@@ -40,10 +40,10 @@ public class MyArray {
 
 
     public int max() {
-        int max = 0;
-
         if (this.array.length == 0) {
-            return max;
+            return 0;
+        } else {
+            int max = this.array[0];
         }
 
         for (int member : this.array) {
